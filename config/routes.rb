@@ -1,7 +1,10 @@
 Frugal::Application.routes.draw do
+  
   root :to => 'home#index'
 
   get "home/index"
+  match "goals" => "home#goals"
+  match "get_started" => 'home#get_started'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

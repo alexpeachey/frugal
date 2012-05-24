@@ -1,0 +1,22 @@
+%h2 Get started
+%h3 Take control of your finances now!
+
+%form{action: goals_url}
+  %label What’s your total monthly income?
+  %input{type:"number", placeholder:"50,000"}
+  
+  %label How much do you spend on housing (and utilities)?
+  %input{type:"number", placeholder: "1200"}
+  
+  %label How much do you spend on food?
+  %input{type:"number", placeholder: "700" }
+  
+  %label How much do you spend on debt?
+  %input{type:"number", placeholder: "872"}
+  
+  %label How much do you spend on vehicles?
+  %input{type:"number", placeholder: "2376"}
+  
+  %br
+  = submit_tag "Set your Goals &raquo;".html_safe, class: "btn btn-primary"
+  
